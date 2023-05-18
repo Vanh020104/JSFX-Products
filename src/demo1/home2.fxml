@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="590.0" prefWidth="783.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="demo1.Products">
+   <children>
+      <Text layoutX="297.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Products">
+         <font>
+            <Font size="49.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtName" layoutX="47.0" layoutY="121.0" promptText="Name">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtPrice" layoutX="47.0" layoutY="204.0" promptText="Price">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtQuantity" layoutX="47.0" layoutY="282.0" promptText="Quantity">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtDescribe" layoutX="47.0" layoutY="364.0" promptText="Describe">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtCategory" layoutX="47.0" layoutY="445.0" promptText="Category">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </TextField>
+      <Button layoutX="216.0" layoutY="516.0" mnemonicParsing="false" onAction="#submit" style="-fx-background-color: black;" text="Button" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <ListView fx:id="lv" layoutX="438.0" layoutY="192.0" onMouseClicked="#edit" prefHeight="290.0" prefWidth="273.0" />
+      <Text layoutX="530.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Display">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Text>
+      <Button layoutX="47.0" layoutY="516.0" mnemonicParsing="false" onAction="#delete" style="-fx-background-color: black;" text="Delete" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>
